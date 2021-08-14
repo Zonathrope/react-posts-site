@@ -3,7 +3,7 @@ import './index.css'
 import PostForm from "./components/PostForm/PostForm";
 import PostList from "./components/PostList/PostList";
 import ModalWindow from "./components/UI/ModalWindow/ModalWindow.jsx";
-import RadioButtons from "./RadioButtons/RadioButtons";
+import RadioButtons from "./components/RadioButtons/RadioButtons";
 
 function App() {
     const [posts, setPosts] = useState([])
