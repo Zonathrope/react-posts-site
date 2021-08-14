@@ -7,7 +7,7 @@ const PostList = ({posts, setPosts}) => {
     }
 
     return (<ul>
-        {posts.map(post => <PostItem removePost={removePost} post={post} key={post.id}/>)}
+        {posts.map((post, id) => <PostItem removePost={removePost} post={post} number={id} key={post.id}/>)}
     </ul>)
 };
 

@@ -5,14 +5,14 @@ const PostForm = ({setPosts}) => {
     const [description, setDescription] = useState('')
 
 
-    const btnClickHandler = (e) =>{
+    const btnClickHandler = (e) => {
         e.preventDefault();
         const post = {
             id: Date.now(),
             name: name,
             description: description,
         }
-        if(post.name !== '' && post.description !== ''){
+        if (post.name !== '' && post.description !== '') {
             setPosts((prev) => [...prev, post])
         }
         setName('')
@@ -23,10 +23,12 @@ const PostForm = ({setPosts}) => {
         <div>
             <form className="form-create">
                 <label htmlFor="postName">Post name: </label>
-                <input value={name} onChange={event => setName(event.target.value)} type="text" id="postName" name="postName"/>
+                <input value={name} onChange={event => setName(event.target.value)} type="text" id="postName"
+                       name="postName"/>
 
-                <label  htmlFor="postDescription">Post description: </label>
-                <input value={description} onChange={event => setDescription(event.target.value)} type="text" id="postDescription" name="postDescription"/>
+                <label htmlFor="postDescription">Post description: </label>
+                <input value={description} onChange={event => setDescription(event.target.value)} type="text"
+                       id="postDescription" name="postDescription"/>
 
                 <button className="btn waves-effect waves-light" type="submit" onClick={btnClickHandler}>
                     Create post

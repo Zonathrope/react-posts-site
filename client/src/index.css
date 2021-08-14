@@ -16,3 +16,30 @@ code {
   margin: 20px;
   width: 50vw;
 }
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-center{
+  margin: 25px;
+}
+
+[type="radio"]:not(:checked) + span, [type="radio"]:checked + span {
+  position: relative;
+  padding-left: 23px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  -webkit-transition: .28s ease;
+  transition: .28s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 10px;
+}
